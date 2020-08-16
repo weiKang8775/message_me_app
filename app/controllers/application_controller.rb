@@ -11,9 +11,6 @@ class ApplicationController < ActionController::Base
   end
 
   def require_user
-    if !logged_in
-      flash[:alert] = "You must be logged in"
-      redirect_to login_path
-    end
+    redirect_to login_path if !logged_in?
   end
 end

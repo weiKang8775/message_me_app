@@ -4,3 +4,8 @@
 
 html,
 body { background-color: snow; }
+
+#messages {
+  height: 15em;
+  overflow: auto;
+}
