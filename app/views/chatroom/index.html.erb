@@ -5,11 +5,9 @@
 
 <div class="ui two column grid">
   <div class="four wide column">
-    <div class="ui inverted fluid vertical menu chatbox">
+    <div class="ui inverted fluid vertical menu chatbox" id="friends-box">
       <div class="header item">Online Friends</div>
-      <a class="item">Erica</a>
-      <a class="item">John</a>
-      <a class="item">Eugene</a>
+      <%= render @friends %>
     </div>
   </div>
   <div class="twelve wide column">

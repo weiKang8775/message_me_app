@@ -1,11 +1,11 @@
 @import 'semantic-ui';
 
-.chatbox { height: 60vh; }
+.chatbox,
+#messages {
+  height: 60vh;
+  overflow: auto;
+}
+
 
 html,
 body { background-color: snow; }
-
-#messages {
-  height: 15em;
-  overflow: auto;
-}

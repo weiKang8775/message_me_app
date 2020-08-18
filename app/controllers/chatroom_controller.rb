@@ -4,5 +4,6 @@ class ChatroomController < ApplicationController
   def index
     @messages = Message.custom_display
     @message = Message.new
+    @friends ||= current_user.friends
   end
 end
